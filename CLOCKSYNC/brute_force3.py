@@ -1,15 +1,5 @@
 #input은 redirection
 
-#link 찾기
-'''
-D = {i:[] for i in range(16)}
-for i in range(10):
-    for j in linked[i]:
-        D[j].append(i)
-for key in D:
-    print(key, D[key], sep=": ")
-'''
-
 linked = {
     0: [0,1,2],
     1: [3,7,9,11],
@@ -23,7 +13,17 @@ linked = {
     9: [3,4,5,9,13]
 }
 
+'''
+D = {i:[] for i in range(16)}
+for i in range(10):
+    for j in linked[i]:
+        D[j].append(i)
+for key in D:
+    print(key, D[key], sep=": ")
+'''
+
 # sequence 찾기
+
 '''
 D = {i:(4 - clocks[j]) % 4 for i, j in zip([1, 4, 9], [11, 8, 13])}
 for sw in D:
